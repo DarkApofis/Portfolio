@@ -6,10 +6,10 @@ const AboutMe = () => {
         <Section id="about">
             <InfoContainer>
                 <h2>About Me</h2>   
-                <P>Hello, My name is Jose Osorio, I'm from Colombia and i started to code in 2020 with the help of Coursera, where i took a serie of courses called 'Python for everybody', after that i started looking for more about programming, and i found something called html</P>
-                <P>So i began to study html, and at the end of 2020 i made the decision to buy the suscripcion of a platform called Platzi, where i learned a loot about html, css, js and react and that moment was when i fell in love with web development.    
+                <P>Hello, my name is Jose Osorio, I'm from Colombia and I started to code in 2020 with the help of Coursera, where I took a series of courses called “Python for everybody”, after that I started looking for more about programming, and I found something called HTML</P>
+                <P>So, I began to study HTML, and at the end of 2020, I made the decision to buy a subscription to a platform called Platzi, where I learned a lot about HTML, CSS, JS, and React.   
                 </P>
-                <P>A year later i found a bootcamp called Henry where i started to improve my technical and soft skills and I took part in the creation of an e-commerce as final project where i could apply my knowledge as a frontend developer.
+                <P>And A year later I found a Bootcamp called Henry where I started to improve my technical and soft skills and I took part in the creation of an E-commerce as final project where I could apply my knowledge as a frontend developer.
                 </P>
                 <P>Some technologies i've work with: </P>
                 <UL>
