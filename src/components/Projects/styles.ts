@@ -7,9 +7,9 @@ export const Section = styled.section`
 
 export const Projects = styled.div`
     display: grid;
-    grid-auto-flow: 400px;
+    grid-auto-rows: 210px;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 1rem 1rem;
+    gap: 2rem 1rem;
 `
 
 export const Anchor = styled.a`
@@ -25,7 +25,7 @@ export const H2 = styled.h2`
 export const ImageContainer = styled.div`
     max-height: 200px;
     border-radius: 5px;
-    overflow-y: scroll;
+    overflow: hidden;
 `
 
 export const Img = styled.img`

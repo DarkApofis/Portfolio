@@ -68,6 +68,7 @@ export const DIV = styled.div`
         width: 100%;
         height: 100%;
         border: 2px solid #84D98A;
+        border-radius: 5px;
         z-index: -1;
     }
     &:hover {

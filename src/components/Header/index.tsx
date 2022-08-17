@@ -1,3 +1,5 @@
+import {Link} from 'react-scroll'
+
 import { Anchor, H2, Header, LI, UL } from "./styles"
 
 const HeaderComponent = () => {
@@ -7,10 +9,10 @@ const HeaderComponent = () => {
             <nav>
                 <UL>
                     <LI>
-                        <Anchor href="/#about">About me</Anchor>
+                        <Link to="about" spy={true} smooth={true} offset={50} duration={500}>About me</Link>
                     </LI>
                     <LI>
-                        <Anchor href="/#projects">Projects</Anchor>
+                        <Link to="projects" spy={true} smooth={true} offset={50} duration={500}>Projects</Link>
                     </LI>
                     <LI>
                         <Anchor 
