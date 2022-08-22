@@ -10,19 +10,19 @@ const ProjectsContainer = () => {
             <Projects>
                 <Anchor href='https://pro-ropa-store.vercel.app/' target='_blank'>
                     <ImageContainer>
-                        <Img src={pro_ropa}/>
+                        <Img src={pro_ropa} loading="lazy"/>
                     </ImageContainer>
                     <P>Pro Ropa - E commerce</P>
                 </Anchor>
                 <Anchor href='https://dog-breeds-eight.vercel.app/' target='_blank'>
                     <ImageContainer>
-                        <Img src={dog_breeds}/>
+                        <Img src={dog_breeds} loading="lazy"/>
                     </ImageContainer>
                     <P>Dog Breeds - SPA</P>
                 </Anchor>
                 <Anchor href='https://platzi-movies.vercel.app/' target='_blank'>
                     <ImageContainer>
-                        <Img src={platzi_movies}/>
+                        <Img src={platzi_movies} loading="lazy"/>
                     </ImageContainer>
                     <P>Platzi Movies - SPA</P>
                 </Anchor>

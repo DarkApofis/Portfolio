@@ -22,7 +22,7 @@ const AboutMe = () => {
             </InfoContainer>
             <DIV>
                 <ImageContainer>
-                    <Img src={profile} alt='A portrait of Jose Osorio'/>
+                    <Img src={profile} alt='A portrait of Jose Osorio' loading="lazy"/>
                 </ImageContainer>
             </DIV>
         </Section>
