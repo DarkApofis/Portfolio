@@ -23,6 +23,7 @@ export const H2 = styled.h2`
 `
 
 export const ImageContainer = styled.div`
+    margin-bottom: 1rem;
     max-height: 200px;
     border-radius: 5px;
     overflow: hidden;

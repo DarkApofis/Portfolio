@@ -3,7 +3,7 @@ import AboutMe from './components/About'
 import HeaderComponent from './components/Header'
 import Intro from './components/Intro'
 import ProjectsContainer from './components/Projects'
-
+import FooterComponent from './components/Footer'
 
 const Main = styled.main`
   margin: 0 auto;
@@ -22,6 +22,7 @@ function App() {
         <AboutMe />
         <ProjectsContainer />
       </Main>
+      <FooterComponent/>
     </>
   )
 }
