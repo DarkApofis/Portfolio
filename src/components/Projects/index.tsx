@@ -1,6 +1,6 @@
 import { Section, Projects, Img, H2, ImageContainer, P, Anchor } from "./styles"
-import pro_ropa from '../../assets/images/pro_ropa.png'
-import dog_breeds from '../../assets/images/dog_breeds.png'
+import pro_ropa from '../../assets/images/pro_ropa.jpg'
+import dog_breeds from '../../assets/images/dog_breeds.jpg'
 import platzi_movies from '../../assets/images/platzi_movies.png'
 
 const ProjectsContainer = () => {
