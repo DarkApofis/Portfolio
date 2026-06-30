@@ -1,88 +1,73 @@
-import styled from "styled-components";
+import styled from 'styled-components'
+import { colors, fonts } from '../../styles/tokens'
 
-export const Section = styled.section`
-    display: flex;
-    flex-direction: column;
-    padding: 100px 0 0 0;
-    margin: 0 auto;
-    max-width: 900px;
-    height: auto;
-    @media (min-width: 800px){
-        flex-direction: row;
-        gap: 3rem;
-    }
+export const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 64px;
+  align-items: start;
+
+  @media (max-width: 860px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
 `
 
-export const InfoContainer = styled.div`
-    max-width: 500px;
+export const Heading = styled.h2`
+  font-family: ${fonts.display};
+  font-weight: 600;
+  font-size: clamp(26px, 3.2vw, 38px);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px;
+  max-width: 20ch;
 `
-
 
 export const P = styled.p`
-    margin-bottom: 1rem;
-    font-size: clamp(0.9rem, 5vw, 1rem);
-    &:first-of-type{
-        margin-top: 1rem;
-    }
+  font-size: 17px;
+  line-height: 1.7;
+  color: ${colors.textMuted};
+  margin: 0 0 18px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
-export const UL = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 250px));
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+export const Aside = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 `
 
-export const LI = styled.li`
-    position: relative;
-    padding-left: 1rem;
-    font-size: 0.9rem;
-    &::before{
-        content: "▹";
-        position: absolute;
-        left: 0px;
-        color: #84D98A;
-    }
-`
-export const Img = styled.img`
-    max-width: 100%;
-    height: auto;
-    mix-blend-mode: multiply;
-    filter: grayscale(100%) contrast(1);
+export const Portrait = styled.img`
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
 `
 
-export const DIV = styled.div`
-    align-self: center;
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin-bottom: 1rem;
-    background-color: #84D98A;
-    border-radius: 5px;
-    &::after{
-        content: '';
-        display: block;
-        position: absolute;
-        left: 20px;
-        top: 20px;
-        width: 100%;
-        height: 100%;
-        border: 2px solid #84D98A;
-        border-radius: 5px;
-        z-index: -1;
-    }
-    &:hover {
-        ${Img}{
-            mix-blend-mode: normal;
-            filter: none;
-        }
-    }
+export const Facts = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: ${fonts.mono};
+  font-size: 13px;
+  color: ${colors.textDim};
 `
 
-export const ImageContainer = styled.div`
-    align-self: center;
-    width: 300px;
-    height: 300px;
-    border-radius: 5px;
-    overflow: hidden;
+export const Fact = styled.div`
+  display: flex;
+  justify-content: space-between;
+  padding: 11px 0;
+  border-bottom: 1px solid ${colors.border};
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  span:last-child {
+    color: ${colors.text};
+  }
 `

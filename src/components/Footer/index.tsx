@@ -1,22 +1,12 @@
-import { Anchor, Footer, UL } from "./styles"
+import { Footer, Note } from './styles'
 
 const FooterComponent = () => {
-    return (
-        <Footer>
-            <UL>
-                <li>
-                    <Anchor href="https://github.com/DarkApofis" target='_blank'>
-                        Github
-                    </Anchor>
-                </li>
-                <li>
-                    <Anchor href="https://www.linkedin.com/in/jose-alfredo-osorio-garcia/" target='_blank'>
-                        Linkedin
-                    </Anchor>
-                </li>
-            </UL>
-        </Footer>
-    )
+  return (
+    <Footer>
+      <Note>© 2026 Jose Alfredo Osorio Garcia</Note>
+      <Note>Built with React · TypeScript · styled-components</Note>
+    </Footer>
+  )
 }
 
 export default FooterComponent

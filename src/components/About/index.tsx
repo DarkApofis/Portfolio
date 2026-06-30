@@ -1,32 +1,52 @@
-import { DIV, ImageContainer, Img, InfoContainer, LI, P, Section, UL } from "./styles"
+import { Section, SectionLabel } from '../common'
+import { Aside, Fact, Facts, Grid, Heading, P, Portrait } from './styles'
 import profile from '../../assets/images/profile.jfif'
 
+const facts = [
+  { label: 'Currently', value: 'Open to roles' },
+  { label: 'Previously', value: 'Mercado Libre' },
+  { label: 'Studying', value: 'Data Science Eng.' },
+  { label: 'Based in', value: 'Bello, Colombia' },
+]
+
 const AboutMe = () => {
-    return (
-        <Section id="about">
-            <InfoContainer>
-                <h2>About Me</h2>   
-                <P>Hello, my name is Jose Osorio, I'm from Colombia and I started to code in 2020 with the help of Coursera, where I took a series of courses called “Python for everybody”, after that I started looking for more about programming, and I found something called HTML</P>
-                <P>So, I began to study HTML, and at the end of 2020, I made the decision to buy a subscription to a platform called Platzi, where I learned a lot about HTML, CSS, JS, and React.   
-                </P>
-                <P>And A year later I found a Bootcamp called Henry where I started to improve my technical and soft skills and I took part in the creation of an E-commerce as final project where I could apply my knowledge as a frontend developer.
-                </P>
-                <P>Some technologies i've work with: </P>
-                <UL>
-                    <LI>Javascript</LI>
-                    <LI>Typescript</LI>
-                    <LI>React</LI>
-                    <LI>Node.js</LI>
-                    <LI>Express.js</LI>
-                </UL>
-            </InfoContainer>
-            <DIV>
-                <ImageContainer>
-                    <Img src={profile} alt='A portrait of Jose Osorio' loading="lazy"/>
-                </ImageContainer>
-            </DIV>
-        </Section>
-    )
+  return (
+    <Section id="about">
+      <SectionLabel number="01" label="about" />
+      <Grid>
+        <div data-reveal>
+          <Heading>
+            I care about the architecture behind the interface as much as the
+            interface itself.
+          </Heading>
+          <P>
+            At Mercado Libre I was part of the frontend architecture of a
+            large-scale CMS used daily by editorial and content teams across the
+            org. I contributed to the patterns other engineers build on —
+            including a documented, shared component library that enforced visual
+            consistency across products.
+          </P>
+          <P>
+            I work close to product: collaborating with PMs, UX/UI designers and
+            backend engineers, shipping production-ready features sprint after
+            sprint, and reaching for AI-assisted workflows to move faster without
+            cutting corners.
+          </P>
+        </div>
+        <Aside data-reveal>
+          <Portrait src={profile} alt="A portrait of Jose Osorio" loading="lazy" />
+          <Facts>
+            {facts.map(({ label, value }) => (
+              <Fact key={label}>
+                <span>{label}</span>
+                <span>{value}</span>
+              </Fact>
+            ))}
+          </Facts>
+        </Aside>
+      </Grid>
+    </Section>
+  )
 }
 
 export default AboutMe
